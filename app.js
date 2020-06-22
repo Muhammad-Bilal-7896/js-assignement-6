@@ -865,7 +865,7 @@
     
 // }
 
-//question12
+// question12
 // 12. Write a JavaScript function that accepts a string as a
 // parameter and find the longest word within the string.
 // EXAMPLE STRING : 'Web Development Tutorial'
@@ -874,36 +874,43 @@
 // var strr=fLW(str);
 // document.write("The longest word is: "+strr);
 // function fLW(str) {
-//     var strSplit = str.split(' ');
-//     var lW = 0;
-//     for(var i = 0; i < strSplit.length; i++){
-//       if(strSplit[i].length > lW){
-//       lW = strSplit[i].length;
-//        }
-//     }
-//     return lW;
+    
+//     var string = str.match(/\w[a-z]{0,}/gi);
+//   var result = string[0];
+
+
+//   for(var i = 1 ; i < string.length ; i++)
+//   {
+//     if(result.length < string[i].length)
+//     {
+//     result = string[i];
+//     } 
 //   }
+//   return result;
+//   }
+
+
 
 //question13
 // 13. Write a JavaScript function that accepts two arguments, a
 // string and a letter and the function will count the number of 
 // occurrences of the specified letter within the string.
 // Sample arguments : 'JSResourceS.com', 'o'
-// var str=prompt("Enter str");
+// var str=prompt("Enter the string");
 // var letter=prompt("Enter letter");
-// var res=char_count(str,letter);
+// var res=charCount(str,letter);
 // document.write(letter+" is "+res+" times");
-// function char_count(str, letter) 
+// function charCount(str, letter) 
 // {
-//  var letter_Count = 0;
+//  var letterCount = 0;
 //  for (var position = 0; position < str.length; position++) 
 //  {
 //     if (str.charAt(position) == letter) 
 //       {
-//       letter_Count += 1;
+//       letterCount += 1;
 //       }
 //   }
-//   return letter_Count;
+//   return letterCount;
 // }
 
 
